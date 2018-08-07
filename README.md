@@ -40,10 +40,11 @@
 	<h1>Como contribuir para os projetos</h1>
 	<ol>
 	<li>Faça um fork do projeto para sua conta do github.</li>
-	<li>Clone o repositório do seu perfil para o seu computador.</li>
+	<li>Clone o repositório do seu perfil para o seu computador e entre na branch develop.</li>
 	<li>Crie uma nova branch para trabalhar no projeto.</li>
 	<li>Atualize constantemente o projeto forkado com o original.</li>
-	<li>Ao finalizar sua alteração no projeto faça um push para seu repositório.</li>
+	<li>Ao finalizar sua alteração no projeto faça um merge da sua branch de trabalho com a branch develop.</li>
+	<li>Faça um push origin develop para seu repositório.</li>
 	<li>Faça um pull request para o repositório original.</li>
 	</ol>
 
