@@ -1,0 +1,50 @@
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.title {
+  font-family: 'Flamenco', sans-serif;
+  font-size: 30px;
+  color: #484848;
+  width: 100%;
+}
+
+/*
+ * TOPBAR
+ */
+
+.topbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.2);
+    font-size: 13px;
+    padding: 20px;
+}
+
+.topbar img {
+  width: 90px;
+}
+
+.topbar ul li {
+    display: inline;
+    list-style: none;
+    padding: 8px 14px;
+}
+
+.topbar ul a {
+    text-decoration: none;
+    color: #3A01DF;
+    opacity: 0.8;
+}
+
+.topbar ul a:hover {
+    opacity: 1;
+}
+
