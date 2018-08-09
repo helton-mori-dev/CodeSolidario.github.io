@@ -1,0 +1,39 @@
+/*
+* TOPBAR MEDIA QUERY
+*/
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+.topbar {
+    display: flex;
+   
+}
+.topbar img {
+    width: 100px;
+  }
+
+.intro h1,
+.intro p {
+    opacity: 0.8;
+    color: #3A01DF;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+  
+}
+h1 {
+    font-weight: normal;
+    font-size: 29px;
+}
+header {
+    background: url(../img/imgsolidaria3.jpg);
+    background-size: cover;
+    min-height: 55vh;
+    width: 320px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

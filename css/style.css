@@ -1,15 +1,8 @@
- body {
+@media (min-width: 1020px){
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Asap', sans-serif;
     -webkit-font-smoothing: antialiased;
-}
-
-.title {
-  font-family: 'Flamenco', sans-serif;
-  font-size: 30px;
-  color: #484848;
-  width: 100%;
 }
 
 /*
@@ -42,9 +35,50 @@
     text-decoration: none;
     color: #3A01DF;
     opacity: 0.8;
+    font-size: 18px;
+    font-family: 'Anton', sans-serif;   
+
 }
 
 .topbar ul a:hover {
     opacity: 1;
 }
+/*
+ * HEADER
+ */
+
+ header {
+    background: url(../img/imgsolidaria3.jpg);
+    background-size: cover;
+    min-height: 86vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.intro h1,
+.intro p {
+    opacity: 0.8;
+    color: #3A01DF;
+    font-family: 'Anton', sans-serif;
+
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.text-background {
+    margin: 0 auto;
+    font-size: 18px;
+    width: 60%;
+    color: #e3e7e7;
+}
+}
+
+
+
 
