@@ -7,7 +7,7 @@ and open the template in the editor.
     Created on : 24/08/2018, 14:25:49
     Author     : Daniele Reis
 */
-
+/*configuração geral mobile first*/
 body{
     /* body serÃ¡ dividido em grids*/
     display: grid;
@@ -51,6 +51,7 @@ body{
     top:0px;
     
 }
+/*botão do menu responsivo*/
 .btn{
     height:75px; 
     background-color:blueviolet;
@@ -61,6 +62,7 @@ body{
     float: right;
     margin-right: 3px;
 }
+/*menu responsivo que aparece ao clique do botão*/
 .dropdown-child ul{
     padding:20px;
     list-style: none;
@@ -94,9 +96,7 @@ display: block;
     display: grid;
     grid-template-areas:"banner""sobre""projetos""contato";
     grid-gap:1rem;
-    position: relative;
-    height: 500px;
-    top: 50px;
+    margin-top: 50px;
     
 }
 
@@ -141,11 +141,14 @@ display: block;
 }
 .footer{
     /*footer sendo colocado no grid-area*/
+    color: black;
     grid-area:footer;
     background-color: blueviolet;
+    height: 100px;
 }
 
-@media(min-width: 600px){
+/*configuração para telas de computador*/
+@media(min-width: 720px){
     .header{
     grid-template-areas: "logo menu menu";
     grid-gap:1rem;
@@ -189,7 +192,7 @@ display: block;
     margin-top: -30px;
     margin-left: -50px;
     }
-    #sobre{
+#sobre{
         grid-template-areas:"historia historia historia"
                         "missao visao valores";
     
