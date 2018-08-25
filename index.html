@@ -7,9 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css" />
+    <script>
+function mostrar() {
+    document.getElementById("btnmenu").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.btn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-child");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
 </head>
 
 <body>
+    <!-- logo e menu vão dentro das tags header-->
     <header class="header">
         <figure class="logo">
             <img src="img/logo_code2.png" alt="Logo do code solidário"/>
@@ -27,6 +47,7 @@
             
         </nav>
     </header>
+    <!--Todo o conteúdo do site vai dentro das tags main-->
     <main class="main" >
         <div class="banner">
             Aqui vai o banner
@@ -46,27 +67,8 @@
         </section>
     </main>
     <footer class="footer">Footer
-        
+       Aqui fica o conteúdo do footer 
     </footer>
 
 </body>
-<script>
-function mostrar() {
-    document.getElementById("btnmenu").classList.toggle("show");
-}
-window.onclick = function(event) {
-  if (!event.target.matches('.btn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-child");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
 </html>
