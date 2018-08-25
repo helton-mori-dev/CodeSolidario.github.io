@@ -4,46 +4,69 @@
 <head>
     <meta charset="utf-8" />
     <title>Code Solídario</title>
-    <link href="https://fonts.googleapis.com/css?family=Anton|Pacifico" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-
-    <nav class="topbar">
-        <div class="brand">
-            <a href="#">
-                <img src="./img/logo_code2.png" alt="Logo Code Solídario">
-            </a>
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="#">SOBRE</a>
-                </li>
-                <li>
-                    <a href="#">QUEM SOMOS</a>
-                </li>
-                <li>
-                    <a href="#">OBJETIVO DO PROJETO</a>
-                </li>
-                <li>
-                    <a href="#">CONTATO</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <header>
-
-        <div class="intro">
-            <h1>SOLIDARIEDADE AMOR EM MOVIMENTO!</h1>
-            <p class="text-background">FAÇA DA SOLIDARIEDADE O SEU LEMA!</p>
-            <p class="text-background">SOLIDAREDADE É UM GESTO DE AMOR</p>
-        </div>
-
+    <header class="header">
+        <figure class="logo">
+            <img src="img/logo_code2.png" alt="Logo do code solidário"/>
+        </figure>
+        <nav class="menu">
+            <button class="btn" onclick="mostrar()"><i class="fa fa-bars"></i></button>
+            <div id="btnmenu"class="dropdown-child">
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            
+        </nav>
     </header>
+    <main class="main" >
+        <div class="banner">
+            Aqui vai o banner
+        </div>
+        <section id="sobre" >
+            <div class="historia">Nossa história</div>
+            <div class="missao">Missão</div>
+            <div class="visao">Visão</div>
+            <div class="valores">Valores</div>
+            
+        </section>  
+        <section id="projetos" >Projetos
+            
+        </section>
+        <section id="contato">Contato
+            
+        </section>
+    </main>
+    <footer class="footer">Footer
+        
+    </footer>
 
 </body>
+<script>
+function mostrar() {
+    document.getElementById("btnmenu").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.btn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-child");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 </html>
