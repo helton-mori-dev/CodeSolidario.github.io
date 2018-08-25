@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
+
 <head>
-	<title>Code Solidário</title>
+    <meta charset="utf-8" />
+    <title>Code Solídario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>	
-<h1>Página inicial do Code Solidário</h1>
+
+<body>
+    <header class="header">
+        <figure class="logo">
+            <img src="img/logo_code2.png" alt="Logo do code solidário"/>
+        </figure>
+        <nav class="menu">
+            <button class="btn" onclick="mostrar()"><i class="fa fa-bars"></i></button>
+            <div id="btnmenu"class="dropdown-child">
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+    <main class="main" >
+        <div class="banner">
+            Aqui vai o banner
+        </div>
+        <section id="sobre" >
+            <div class="historia">Nossa história</div>
+            <div class="missao">Missão</div>
+            <div class="visao">Visão</div>
+            <div class="valores">Valores</div>
+            
+        </section>  
+        <section id="projetos" >Projetos
+            
+        </section>
+        <section id="contato">Contato
+            
+        </section>
+    </main>
+    <footer class="footer">Footer
+        
+    </footer>
 
 </body>
+<script>
+function mostrar() {
+    document.getElementById("btnmenu").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.btn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-child");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 </html>
