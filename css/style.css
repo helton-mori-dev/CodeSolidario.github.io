@@ -59,7 +59,7 @@ body{
     color: white;
     border: none;
     cursor: pointer;
-    padding:27px 20px;
+    padding:25px 20px;
     float: right;
 }
 /*menu responsivo que aparece ao clique do bot�o*/
@@ -69,7 +69,7 @@ body{
     background-color:blueviolet;
     width: 250%;
     position: absolute;
-    top: 75%;
+    top: 59%;
     right: 0%;
     padding: 0%;
     
@@ -102,7 +102,7 @@ display: block;
     display: grid;
     grid-template-areas:"banner""sobre""projetos""contato";
     grid-gap:1rem;
-    margin-top:60px;
+    margin-top:55px;
     
 }
 
