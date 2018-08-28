@@ -169,7 +169,7 @@ h2,h3{
 }
 
 /*configura��o para telas de computador*/
-@media(min-width: 600px){
+@media(min-width: 720px){
     .header{
     grid-template-areas: "logo menu menu";
     grid-gap:1rem;
@@ -194,7 +194,7 @@ h2,h3{
         float: left;
 	width: 100%;
         position: absolute;
-        right: 20%;
+        right: 40%;
     
         
  }
@@ -227,5 +227,10 @@ h2,h3{
     
     }
 }
+@media(min-width: 900px){
 
+    .dropdown-child ul{
+        right: 20%;
+    }
+}
 
