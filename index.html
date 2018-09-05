@@ -7,25 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css" />
-    <script>
-function mostrar() {
-    document.getElementById("btnmenu").classList.toggle("show");
-}
-window.onclick = function(event) {
-  if (!event.target.matches('.btn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-child");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
 </head>
 
 <body>
@@ -38,10 +21,10 @@ window.onclick = function(event) {
             <button class="btn" onclick="mostrar()"><i class="fa fa-bars"></i></button>
             <div id="btnmenu"class="dropdown-child">
                 <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="scrollPage" href="#sobre">Sobre</a></li>
+                <li><a class="scrollPage" href="#projetos">Projetos</a></li>
+                <li><a class="scrollPage" href="#contato">Contato</a></li>
                 <li><a href="#">Blog</a></li>
                 </ul>
             </div>
@@ -56,13 +39,14 @@ window.onclick = function(event) {
         <section id="sobre" >
             <div class="historia"><h2>Nossa história</h2>
             
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p></div>
-            <div class="missao"><h3>Missão</h3></div>
-            <div class="visao"><h3>Visão</h3></div>
-            <div class="valores"><h3>Valores</h3></div>
+                <p>Code Solidário é um projeto que tem como objetivo desenvolver gratuitamente sites e pequenos sistemas para ONG's e instituições de caridade, usando a tecnologia para melhorar a vida das pessoas. O projeto foi iniciado em agosto de 2018 e conta com apoio de desenvolvedores e estudantes de várias cidades do país, trabalhando de forma colaborativa, propiciando novos aprendizados e incentivando o espírito solidário. As instituições com interesse em serem beneficiadas devem entrar em contato para que possa ser feito o processo de planejamento e desenvolvimento do projeto.</p></div>
+            <div class="missao"><h3>Missão</h3><p>Melhorar a vida das pessoas através da união entre tecnologia e solidariedade.
+</p></div>
+            <div class="visao"><h3>Visão</h3><p>Inovar para o bem!</p></div>
+            <div class="valores"><h3>Valores</h3>Inovação, responsabilidade social, solidariedade e respeito.</div>
             
         </section>  
-        <section id="projetos" >
+        <section id="projetos">
             <h2>Projetos</h2>
             <div class="conteudo">
                 <figure class="projeto"><img src="img/imgsolidaria3.jpg" alt="imagem de teste"></figure>
@@ -88,9 +72,48 @@ window.onclick = function(event) {
             
         </section>
     </main>
-    <footer class="footer">Footer
-       Aqui fica o conteúdo do footer 
+    <footer class="footer">
+        <p>&copy Desenhado e desenvolvido por Code Solidário| Todos os direitos reservados.</p>
+        <div class="icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+        </div>
     </footer>
+    <a href="#" class="back-to-top" id="btn-scroll-top" title="Back to top">&uarr;</a>
+ <script>
+function mostrar() {
+    document.getElementById("btnmenu").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.btn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-child");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<script>
+    $('.scrollPage, .back-to-top').click(function (e) {
+ e.preventDefault();   
+$('html, body').animate({
+  scrollTop: ($.attr(this, 'href') != '#') ? $($.attr(this, 'href')).offset().top : 0
+}, 500);
+});
+$(window).on('scroll', function () {
+    if ($(window).scrollTop() > 100)
+        $('#btn-scroll-top').addClass('show');
+    else
+        $('#btn-scroll-top').removeClass('show');
+});
+</script>
 
 </body>
 </html>
