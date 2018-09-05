@@ -20,6 +20,7 @@ body{
     text-align: center;
     height: 100%;
     width: 100%;
+    font-family: helvetica;
 }
 .header{
     /*header sendo colocado no grid-area*/
@@ -129,6 +130,12 @@ display: block;
 h2,h3{
     text-align: center;
 }
+h2{
+    color: #5fbd51;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 2px grey;
+}
 .historia{
     grid-area:historia;
 }
@@ -167,7 +174,35 @@ h2,h3{
 #contato{
     /*section id contato sendo colocado dentro de uma das grid area do main*/
     grid-area:contato;
+}
+#contato form{
+    width:80%;
+    margin:0 auto;
+    border: solid blueviolet;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#contato label{
+    width:90%;
+    color: blueviolet;
+}
+#contato input, textarea{
+    width: 90%;
+    margin-bottom: 2%;
+}
+#contato textarea{
+    height: 100px;
+}
+#contato button{
+    border: none;
+    padding: 10px 20px;
     background-color: blueviolet;
+    color: #fff;
+}
+#contato button:hover{
+    background-color: #5fbd51;
 }
 .footer{
     /*footer sendo colocado no grid-area*/
