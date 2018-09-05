@@ -151,8 +151,19 @@ h2,h3{
 #projetos{
     /*section id projetos sendo colocado dentro de uma das grid area do main*/
     grid-area:projetos;
-    background-color:blueviolet;
+    
 }
+.conteudo{
+    display: grid;
+    grid-template-columns:100%;
+}
+.projeto{
+        
+    }
+    .projeto img{
+        height: 100%;
+        width: 100%;
+    }
 #contato{
     /*section id contato sendo colocado dentro de uma das grid area do main*/
     grid-area:contato;
@@ -226,11 +237,16 @@ h2,h3{
                         "missao visao valores";
     
     }
+    .conteudo{
+    grid-template-columns:33% 33% 33%;
+    }
+    
 }
 @media(min-width: 900px){
 
     .dropdown-child ul{
         right: 20%;
     }
+    
 }
 
