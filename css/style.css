@@ -20,6 +20,7 @@ body{
     text-align: center;
     height: 100%;
     width: 100%;
+    font-family: helvetica;
 }
 .header{
     /*header sendo colocado no grid-area*/
@@ -126,7 +127,15 @@ display: block;
     text-align: center;
     
 }
-h2,h3{
+h3{
+    text-align: center;
+    font-weight: 200;
+}
+h2{
+    color: #5fbd51;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 2px grey;
     text-align: center;
 }
 .historia{
@@ -151,21 +160,91 @@ h2,h3{
 #projetos{
     /*section id projetos sendo colocado dentro de uma das grid area do main*/
     grid-area:projetos;
-    background-color:blueviolet;
+    
 }
+.conteudo{
+    display: grid;
+    grid-template-columns:100%;
+}
+.projeto{
+        
+    }
+    .projeto img{
+        height: 100%;
+        width: 100%;
+    }
 #contato{
     /*section id contato sendo colocado dentro de uma das grid area do main*/
     grid-area:contato;
+}
+#contato form{
+    width:90%;
+    margin:0 auto;
+    border: solid blueviolet;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#contato label{
+    width:90%;
+    color: blueviolet;
+}
+#contato input, textarea{
+    width: 90%;
+    margin-bottom: 2%;
+}
+#contato textarea{
+    height: 100px;
+}
+#contato button{
+    border: none;
+    padding: 10px 20px;
     background-color: blueviolet;
+    color: #fff;
+}
+#contato button:hover{
+    background-color: #5fbd51;
 }
 .footer{
     /*footer sendo colocado no grid-area*/
-    color: black;
+    color: #fff;
     grid-area:footer;
     background-color:#0E0036;
     position: relative;
     top: 1%;
     height: 100px;
+}
+.icons a{
+   padding: 10px;
+   text-decoration: none;
+   color: #fff;
+}
+#btn-scroll-top {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 40px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+}
+
+#btn-scroll-top:hover {
+    background: #000;
+    opacity: 1 !important;
+}
+
+#btn-scroll-top.show {
+    opacity: 0.4;
 }
 
 /*configura��o para telas de computador*/
@@ -194,7 +273,7 @@ h2,h3{
         float: left;
 	width: 100%;
         position: absolute;
-        right: 20%;
+        right: 40%;
     
         
  }
@@ -226,6 +305,16 @@ h2,h3{
                         "missao visao valores";
     
     }
+    .conteudo{
+    grid-template-columns:33% 33% 33%;
+    }
+    
 }
+@media(min-width: 900px){
 
+    .dropdown-child ul{
+        right: 20%;
+    }
+    
+}
 
