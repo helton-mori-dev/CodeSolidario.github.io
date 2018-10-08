@@ -11,10 +11,12 @@
 <ul>
 <br>
 <h2> Nossos Repositórios</h2>
-<a href="https://github.com/CodeSolidario/CodeSolidario.github.io"> Nosso site </a>
-<a href="https://github.com/CodeSolidario/adoteUmPet"> Adote um Pet </a>
+<ul><li><a href="https://github.com/CodeSolidario/CodeSolidario.github.io"> Nosso site </a>
+</li>
+<li><a href="https://github.com/CodeSolidario/adoteUmPet"> Adote um Pet </a></li>
+</ul>
 <br>
 <h2>Como sugerir instituições </h2>
-<p> Abra um issue e no titulo coloque entre colchetes o nome da cidade, seguido do nome da instituição. ex: [Salvador] Nome da Instituição.<br>
+<p> Abra um issue e no titulo coloque entre colchetes o nome da cidade, seguido do nome da instituição. <br>ex:<code> [Salvador] Nome da Instituição.</code><br>
 Faça uma breve descrição informando a área de atuação e possíveis contatos. <br>
 Após fazermos contato com a instituição e for confirmado o interesse, criaremos um repositório com o projeto para o site ou sistema desta instituição, então o issue já poderá ser fechado.<p>
