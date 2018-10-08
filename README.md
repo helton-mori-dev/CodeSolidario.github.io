@@ -1,4 +1,4 @@
-<h1>Site Code Soledário</h1>
+<h1>Site Code Solidário</h1>
 
 <p>Você pode colaborar com melhorias para o nosso site, você precisa apenas:</p>
 <ul><li>Fazer o fork deste repositório e clonar para sua máquina</li>
