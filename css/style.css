@@ -37,8 +37,7 @@ body{
     padding-bottom: 0;
 }
 .logo{
-    grid-area:logo;
-  
+    grid-area:logo;  
 }
 .logo img{
     max-width:100%;
@@ -51,8 +50,7 @@ body{
     grid-area:menu;
     width:100%;
     position: relative;
-    display: inline-block;
-    
+    display: inline-block;    
 }
 /*bot�o do menu responsivo*/
 .btn{ 
@@ -68,7 +66,7 @@ body{
     padding:10%;
     list-style: none;
     background-color:blueviolet;
-    width: 250%;
+    width: 0%;
     position: absolute;
     top: 59%;
     right: 0%;
@@ -178,7 +176,7 @@ h2{
     grid-area:contato;
 }
 #contato form{
-    width:90%;
+    width: 50%;
     margin:0 auto;
     border: solid blueviolet;
     position: relative;
@@ -187,11 +185,11 @@ h2{
     padding-bottom: 20px;
 }
 #contato label{
-    width:90%;
+    width:50%;
     color: blueviolet;
 }
 #contato input, textarea{
-    width: 90%;
+    width: 50%;
     margin-bottom: 2%;
 }
 #contato textarea{
@@ -318,3 +316,8 @@ h2{
     
 }
 
+@media(max-width: 1000px) {
+    #contato form{
+        width: 80%;
+    }
+}
