@@ -3,7 +3,7 @@
 <p>Você pode colaborar com melhorias para o nosso site, você precisa apenas:</p>
 <ul><li>Fazer o fork deste repositório e clonar para sua máquina</li>
 <li>Crie uma branch com seu nome Ex: "nome-sobrenome"</li>
-<li> Realize as correções ou melhorias. <li>
+<li> Realize as correções ou melhorias. </li>
 <li> Faça um pull request</li>
 </ul>
 
