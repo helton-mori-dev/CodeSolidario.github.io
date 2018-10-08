@@ -3,6 +3,8 @@
 <h1>Sobre nós</h1>
 <p>Code Solidário é um projeto que tem como objetivo desenvolver gratuitamente sites e pequenos sistemas para ONG's e instituições de caridade e também desenvolver projetos de impacto social, utilizando a tecnologia para melhorar a vida das pessoas. O projeto foi iniciado em agosto de 2018 e conta com apoio de desenvolvedores e estudantes de várias cidades do país, trabalhando de forma colaborativa, propiciando novos aprendizados e incentivando o espírito solidário. As instituições com interesse em serem beneficiadas devem entrar em contato para que possa ser feito o processo de planejamento e desenvolvimento do projeto.</p>
 
+<a href="https://codesolidario.github.io/" target="_blank">Página do Projeto</a>
+
 <h1>Como Captar Instituições</h1>
 <ol>
 	<li>Fazer uma reunião com a instituição escolhida para preencher o quesquinário de levantamento de requisitos.</li>
