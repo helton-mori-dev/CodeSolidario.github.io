@@ -6,8 +6,6 @@
     <title>Code Solídario| A tecnologia a favor da solidariedade.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!-- Adicionando Reset CSS para padronizar visualização em navegadores diferentes -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -21,7 +19,9 @@
             <img src="img/logo_code2.png" alt="Logo do code solidário"/>
         </figure>
         <nav class="menu">
-            <button class="btn" onclick="mostrar()"><i class="fa fa-bars"></i></button>
+            <button class="btn" onclick="mostrar()">
+                <i class="fa fa-bars"></i>
+            </button>
             <div id="btnmenu"class="dropdown-child">
                 <ul>
                 <li><a href="index.html">Home</a></li>
@@ -85,40 +85,8 @@
         </div>
     </footer>
     <a href="#" class="back-to-top" id="btn-scroll-top" title="Back to top">&uarr;</a>
-    <!-- Função que faz o menu responsivo aparecer ao clicar no botão e sumir ao clicar fora.  -->
- <script>
-function mostrar() {
-    document.getElementById("btnmenu").classList.toggle("show");
-}
-window.onclick = function(event) {
-  if (!event.target.matches('.btn')) {
+    <div id="back-layer"></div>
 
-    var dropdowns = document.getElementsByClassName("dropdown-child");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-<!-- Função para fazer a rolagem scroll -->
-<script>
-    $('.scrollPage, .back-to-top').click(function (e) {
- e.preventDefault();   
-$('html, body').animate({
-  scrollTop: ($.attr(this, 'href') != '#') ? $($.attr(this, 'href')).offset().top : 0
-}, 500);
-});
-$(window).on('scroll', function () {
-    if ($(window).scrollTop() > 100)
-        $('#btn-scroll-top').addClass('show');
-    else
-        $('#btn-scroll-top').removeClass('show');
-});
-</script>
-
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

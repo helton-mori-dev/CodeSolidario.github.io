@@ -31,7 +31,7 @@ body{
     top: 0;
     right: 0;
     left: 0;
-    z-index: 2;
+    z-index: 10;
     background-color: white;
     height: 10%;
     padding-bottom: 0;
@@ -58,7 +58,7 @@ body{
     color: white;
     border: none;
     cursor: pointer;
-    padding:25px 20px;
+    padding: 20px 20px;
     float: right;
 }
 /*menu responsivo que aparece ao clique do bot�o*/
@@ -68,11 +68,15 @@ body{
     background-color:blueviolet;
     width: 0%;
     position: absolute;
-    top: 59%;
+    top: 100%;
     right: 0%;
     padding: 0%;
-    
+    transition: .2s all ease;    
 }
+.dropdown-child.show ul{
+    width: 100%;
+}
+
 .dropdown-child ul li a{
      color: #fff;
     text-decoration: none;
@@ -85,15 +89,26 @@ body{
    color: blueviolet;
 }
 
-.dropdown-child {
-display: none;
-
-}
 
 .show {
 display: block;
 }
-    
+
+#back-layer {
+    position: fixed;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.7);
+    cursor: pointer;
+    z-index: 9;
+    display: none;
+}
+
+#back-layer.show {
+    display: block;
+}
 .main{
     /*main sendo colocado no grid-area*/
     grid-area:main;
